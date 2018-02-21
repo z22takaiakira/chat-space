@@ -1312,3 +1312,45 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-21 18:45:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (26.1ms)
+Completed 200 OK in 417ms (Views: 400.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-22 07:53:55 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (23.5ms)
+Completed 200 OK in 403ms (Views: 389.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-22 07:55:26 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 496ms (Views: 493.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-22 07:56:29 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 360ms (Views: 355.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-22 07:56:38 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 385ms (Views: 381.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-22 08:04:04 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (3.7ms)
+Completed 200 OK in 341ms (Views: 338.4ms | ActiveRecord: 0.0ms)
+
+

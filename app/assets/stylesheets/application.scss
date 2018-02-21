@@ -34,19 +34,27 @@ height: 100%;
       &__top{
         height: 51px;
         background-color: $topbar-color;
-        position: relative;}
+        position: relative;
+             }
       &__top p{
         color: $bar-tcolor;
         position:absolute;
         bottom: 0;
-      }
-      &__top i{
+        left:20px;
+              }
+      &__top i#settei{
         color: $bar-tcolor;
         position:absolute;
         bottom: 0;
         right: 20px;
-      }
-          }
+                     }
+      &__top i#toukou{
+        color: $bar-tcolor;
+        position:absolute;
+        bottom: 0;
+        right: 40px;
+                     }
+             }
   &__chat{
     height:100%;
     width: calc(100% - 300px);
