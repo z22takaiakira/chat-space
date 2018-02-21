@@ -30,6 +30,15 @@ height: 100%;
     width: 300px;
     background-color: $bar-color;
     float: left;
+      &__top{
+        height: 51px;
+        background-color: $topbar-color;
+        position: relative;}
+      &__top p{
+        color: $bar-tcolor;
+        position:absolute;
+        bottom: 0;
+      }
           }
   &__chat{
     height:100%;
