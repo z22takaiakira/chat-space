@@ -1,5 +1,6 @@
 @import "./reset";
 @import "./variable";
+@import "./font-awesome";
 $h-color: #38AEF0;
 $topbar-color: #253141;
 $bar-tcolor: #ffffff;
@@ -38,6 +39,12 @@ height: 100%;
         color: $bar-tcolor;
         position:absolute;
         bottom: 0;
+      }
+      &__top i{
+        color: $bar-tcolor;
+        position:absolute;
+        bottom: 0;
+        right: 20px;
       }
           }
   &__chat{
