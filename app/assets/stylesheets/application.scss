@@ -25,5 +25,17 @@ height: 100%;
 .main{
   height: 100%;
   width: 100%;
-  .
+  &__sidebar{
+    height:100%;
+    width: 300px;
+    background-color: $bar-color;
+    float: left;
+          }
+  &__chat{
+    height:100%;
+    width: calc(100% - 300px);
+    background-color: $chat-color;
+    float: left;
+
+        }
   }
