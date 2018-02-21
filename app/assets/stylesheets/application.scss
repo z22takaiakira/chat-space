@@ -1,6 +1,6 @@
 @import "./reset";
 @import "./variable";
-$h-coler: #38AEF0;
+$h-color: #38AEF0;
 $topbar-color: #253141;
 $bar-tcolor: #ffffff;
 $bar-color: #2f3e51;
@@ -9,16 +9,21 @@ $chat-t2color:#999999;
 $chat-t3color:#434A54;
 $chat-color:#aaaaaa;
 
+html,
+body{
+height: 100%;
+}
 
 .header{
   height: 50px;
   width: 100%;
-  background-color: $hcolor;
+  background-color: $h-color;
 }
 
 
 
 .main{
-
-
-}
+  height: 100%;
+  width: 100%;
+  .
+  }
