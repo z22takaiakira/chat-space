@@ -2400,3 +2400,10 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-22 15:06:53 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 397ms (Views: 394.5ms | ActiveRecord: 0.0ms)
+
+
