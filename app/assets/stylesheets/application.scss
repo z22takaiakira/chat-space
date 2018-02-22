@@ -10,6 +10,7 @@ $chat-t2color:#999999;
 $chat-t3color:#434A54;
 $chat-color:#aaaaaa;
 
+
 html,
 body{
 height: 100%;
@@ -31,33 +32,79 @@ height: 100%;
     width: 300px;
     background-color: $bar-color;
     float: left;
+
       &__top{
-        height: 51px;
+        height: 86px;
         background-color: $topbar-color;
         position: relative;
-             }
+        padding: 0 20px 0 20px}
+
+
       &__top p{
         color: $bar-tcolor;
         position:absolute;
-        bottom: 0;
+        font-size: 16px;
+        bottom: 35px;
         left:20px;
+        font-weight: bold;
               }
+
       &__top i#settei{
         color: $bar-tcolor;
         position:absolute;
-        bottom: 0;
+        bottom: 35px;
         right: 20px;
         font-family:FontAwesome;
                      }
-      &__top i#toukou{
+      &__top i#touroku{
         color: $bar-tcolor;
         position:absolute;
-        bottom: 0;
+        bottom: 35px;
         right: 40px;
         font-family:FontAwesome;
                      }
-      &__group ul
-             }
+      &__group{
+        padding: 0 20px 0 20px;
+        position: relative;
+
+        &__name1{
+          padding-top: 20px;
+          color: $bar-tcolor;
+          font-size: 15px;
+                }
+        &__message1{
+          padding-top: 5px;
+          color: $bar-tcolor;
+          font-size: 11px;
+                   }
+        &__name2{
+          padding-top: 40px;
+          color: $bar-tcolor;
+          font-size: 15px
+                }
+        &__message2{
+          padding-top: 5px;
+          color: $bar-tcolor;
+          font-size: 11px;
+                   }
+        &__name3{
+          padding-top: 40px;
+          color: $bar-tcolor;
+          font-size: 15px
+                }
+        &__message3{
+          padding-top: 5px;
+          color: $bar-tcolor;
+          font-size: 11px;
+        }
+
+
+        }
+
+        }
+
+
+
   &__chat{
     height:100%;
     width: calc(100% - 300px);
