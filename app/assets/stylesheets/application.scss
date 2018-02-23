@@ -28,25 +28,25 @@ height: 100%;
 .main{
   height: 100%;
   width: 100%;
+
   &__sidebar{
     height:100%;
     width: 300px;
     background-color: $bar-color;
     float: left;
+    overflow:hidden;
 
       &__top{
         height: 86px;
         background-color: $topbar-color;
         position: relative;
-        padding: 0 20px 0 20px}
+        padding: 0 20px 0 20px;}
 
 
       &__top p{
         color: $bar-tcolor;
-        position:absolute;
         font-size: 16px;
-        bottom: 35px;
-        left:20px;
+        padding-top: 35px;
         font-weight: bold;
               }
 
@@ -66,7 +66,7 @@ height: 100%;
                      }
       &__group{
         padding: 0 20px 0 20px;
-        position: relative;
+
 
         &__name1{
           padding-top: 20px;
@@ -97,20 +97,69 @@ height: 100%;
           padding-top: 5px;
           color: $bar-tcolor;
           font-size: 11px;
-        }
+                   }
 
 
         }
 
         }
-
-
-
   &__chat{
     height:100%;
     width: calc(100% - 300px);
-    background-color: chat-color;
-    float: left;
+    background-color: $chat-color;
+    float: right;
 
+
+
+
+    &__home{
+      height: 86px;
+      width: 100%;
+      background-color: white;
+      padding: 0 40px 0 40px;
+      position: relative;
+
+      &__group p{
+        padding-top: 35px;
+        font-size: 20px;
+                }
+      &__name p{
+        font-size:12px;
+        padding-top: 15px;
+                }
+      &__edit{
+        a.square_btn{
+         display: inline-block;
+         height: 40px;
+         padding: 0 20px;
+         line-height:40px;
+         text-decoration: none;
+         color: #67c5ff;
+         border: solid 2px #67c5ff;
+         border-radius: 3px;
+         transition: .4s;
+         position: absolute;
+         top:28px;
+         right:120px;
+
+
+
+                    }
+             }
+
+
+
+
+
+
+
+
+
+           }
         }
-  }
+
+
+
+
+    }
+
