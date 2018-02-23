@@ -29,6 +29,22 @@
 
 
     .main__chat__sub
+      %ul
+        %li.name takai akira
+        %li.date 2018/2/24
+        %br
+        %li.body こんにちわ
+      %ul
+        %li.name yamada tarou
+        %li.date 2018/2/25
+        %br
+        %li.body また明日
+      .main__chat__submit
+      - form_tag()
+      = text_area :title, class: "text" ,:size => 380*80
+      = submit_tag "作成"
+
+
 
 
 
