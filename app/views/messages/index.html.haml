@@ -39,10 +39,11 @@
         %li.date 2018/2/25
         %br
         %li.body また明日
-      .main__chat__submit
-      - form_tag()
-      = text_area :title, class: "text" ,:size => 380*80
-      = submit_tag "作成"
+    .main__chat__submit
+      = form_tag()do
+        %textarea{:cols => "100", :name => "text",:rows => "3",:size =>"900"}
+        %input{:type => "submit", :value => "SENT"}
+
 
 
 
