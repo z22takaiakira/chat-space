@@ -1,0 +1,190 @@
+@import "./reset";
+@import "./variable";
+@import "./font-awesome";
+
+html,
+body{
+height: 100%;
+    }
+
+.header{
+  height: 50px;
+  width: 100%;
+  background-color: $h-color;
+  text-align: center;
+  color: $bar-tcolor;
+}
+
+.main{
+  height: 100%;
+  width: 100%;
+
+  &__sidebar{
+    height:100%;
+    width: 300px;
+    background-color: $bar-color;
+    float: left;
+    overflow:hidden;
+
+    &__top{
+      height: 86px;
+      background-color: $topbar-color;
+      position: relative;
+      padding: 0 20px 0 20px;
+    }
+
+    &__top p{
+      color: $bar-tcolor;
+      font-size: 16px;
+      padding-top: 35px;
+      font-weight: bold;
+    }
+
+    &__top i#settei{
+      color: $bar-tcolor;
+      position:absolute;
+      bottom: 35px;
+      right: 20px;
+      font-family:FontAwesome;
+    }
+
+    &__top i#touroku{
+      color: $bar-tcolor;
+      position:absolute;
+      bottom: 35px;
+      right: 40px;
+      font-family:FontAwesome;
+    }
+
+    &__group{
+      padding: 0 20px 0 20px;
+
+      ul{
+        padding: 20px 0 20px 0;
+
+        li.name{
+          font-size: 15px;
+          color:$bar-tcolor;
+        }
+
+        li.text{
+          font-size: 11px;
+          color:$bar-tcolor;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  &__chat{
+    height:100%;
+    width: calc(100% - 300px);
+    float: right;
+    position: relative;
+    background-color: $chat-color;
+
+    &__home{
+      height: 86px;
+      width: 100%;
+      padding-left: 40px;
+      background-color: $bar-tcolor;
+
+      &__group p{
+        padding-top: 35px;
+        font-size: 20px;
+      }
+
+      &__name p{
+        font-size:12px;
+        padding-top: 15px;
+      }
+
+      &__edit a{
+        display: inline-block;
+        height: 40px;
+        padding: 0 20px;
+        line-height:40px;
+        text-decoration: none;
+        color: $h-color;
+        border: solid 2px #67c5ff;
+        border-radius: 3px;
+        transition: .4s;
+        position: absolute;
+        top:28px;
+        right:40px;
+        text-decoration:none;
+      }
+    }
+
+    &__sub{
+      height: 50px;
+      padding:0 0 0 40px;
+      position: relative;
+
+      ul{
+        padding:46px 0 0 0;
+
+        li.name{
+          float: left;
+          font-size: 16px;
+          color:$chat-t3color;
+          font-weight: bold;
+        }
+
+        li.date{
+          padding-left: 10px;
+          padding-top: 3px;
+          float: left;
+          font-size: 12px;
+          color:$chat-t2color;
+        }
+
+        li.body{
+          padding-top: 10px;
+          font-size: 14px;
+          color:$chat-t3color;
+        }
+      }
+    }
+
+    &__submit{
+      height: 90px;
+      width: 100%;
+      background-color: $chat-submit-color;
+      position: absolute;
+      bottom: 0;
+
+      textarea{
+        resize: none;
+        height: 50px;
+        width: calc(100% - 200px);
+        margin: 20px 20px 20px 50px;
+      }
+
+      input.form-check-input{
+        display: none;
+
+        & + .label-name::before {
+          display: inline-block;
+          font-family: FontAwesome;
+          width: 1.2rem;
+          position: absolute;
+          bottom: 30px;
+          right: 155px;
+          content: "\f03e";
+        }
+      }
+
+      button{
+        height: 50px;
+        padding:10px 30px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        background-color:$h-color;
+        color: $bar-tcolor;
+        font-size:16px;
+      }
+    }
+  }
+}
