@@ -19,7 +19,7 @@
       .mein__chat__home__name
         %p menber : takai
       .main__chat__home__edit
-        %a.square_btn{:href => "#"} EDIT
+        =link_to "EDIT"
 
 
     .main__chat__sub
@@ -35,10 +35,8 @@
         %li.body また明日
     .main__chat__submit
       =form_tag()do
-        %textarea{:name => "text"}
+        %textarea{name: "text"}
         %label.form-check-label
-          %input.form-check-input{:type => 'file', }
+          %input.form-check-input{type: 'file', }
           %span.label-name
-
-
-        %button{:type => "submit"}sent
+        %button{type: "submit"}sent

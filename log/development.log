@@ -9525,3 +9525,572 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 15:07:40 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (7.4ms)
+  Rendered messages/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 440ms (Views: 436.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:41:52 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (12.5ms)
+  Rendered messages/index.html.haml within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:22: syntax error, unexpected tSTRING_DEND, expecting ')'
+::Haml::Helpers.html_escape(((link_to "",""} EDIT
+                                            ^):
+  
+app/views/messages/_messages.html.haml:22: syntax error, unexpected tSTRING_DEND, expecting ')'
+app/views/messages/index.html.haml:2:in `_app_views_messages_index_html_haml___3664502039449172545_70352158691980'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (165.4ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:45:33 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (10.7ms)
+  Rendered messages/index.html.haml within layouts/application (15.4ms)
+Completed 200 OK in 578ms (Views: 574.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:45:36 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.5ms)
+  Rendered messages/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:45:44 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (19.8ms)
+  Rendered messages/index.html.haml within layouts/application (25.2ms)
+Completed 200 OK in 66ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:47:30 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (7.3ms)
+  Rendered messages/index.html.haml within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected selector or at-rule, was "}"):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+  
+app/assets/stylesheets/application.scss:189
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__302614786327412927_70352158403840'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (167.3ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:48:03 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (8.6ms)
+  Rendered messages/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 427ms (Views: 424.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:48:06 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.3ms)
+  Rendered messages/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 56ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:48:07 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.2ms)
+  Rendered messages/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 52ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:48:07 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.3ms)
+  Rendered messages/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 52ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:49:14 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (7.4ms)
+  Rendered messages/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 402ms (Views: 399.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:49:17 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (8.2ms)
+  Rendered messages/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:50:47 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (7.9ms)
+  Rendered messages/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 402ms (Views: 399.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:53:00 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (7.8ms)
+  Rendered messages/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 389ms (Views: 386.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:53:36 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (10.2ms)
+  Rendered messages/index.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:55:48 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (10.6ms)
+  Rendered messages/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 440ms (Views: 436.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:57:35 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (8.3ms)
+  Rendered messages/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 406ms (Views: 402.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 16:59:55 +0900
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.5ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (158.2ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:00:08 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/chatspace"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (2.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (211.8ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:01:16 +0900
+  
+ArgumentError (must be called with a path and/or options):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (173.0ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:07:32 +0900
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+  root :to : 'messages#index'
+            ^):
+  
+config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (162.6ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:07:45 +0900
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+  root :to :'messages#index'
+            ^):
+  
+config/routes.rb:3: syntax error, unexpected ':', expecting keyword_end
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (139.2ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:07:51 +0900
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/config/routes.rb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  root :to 'messages#index'
+            ^):
+  
+config/routes.rb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (148.4ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:09:29 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/chatspace"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (1.1ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (225.1ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 17:09:31 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/chatspace"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (1.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (190.8ms)
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:09:48 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.7ms)
+  Rendered messages/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:19:41 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (19.3ms)
+  Rendered messages/index.html.haml within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+...lout.attributes({}, nil,:name : "text")).to_s);; _hamlout.bu...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+...({}, nil,:name : "text")).to_s);; _hamlout.buffer << ("></te...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+...form-check-input"}, nil,:type : 'file', )).to_s);; _hamlout....
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ',', expecting ')'
+...ck-input"}, nil,:type : 'file', )).to_s);; _hamlout.buffer <...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+...lout.attributes({}, nil,:type : "submit")).to_s);; _hamlout....
+...                               ^):
+  
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ',', expecting ')'
+app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+app/views/messages/index.html.haml:2:in `_app_views_messages_index_html_haml___3664502039449172545_70352162148260'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (138.4ms)
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:20:13 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.7ms)
+  Rendered messages/index.html.haml within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+...lout.attributes({}, nil,:name :"text")).to_s);; _hamlout.buf...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+...s({}, nil,:name :"text")).to_s);; _hamlout.buffer << ("></te...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+...form-check-input"}, nil,:type :'file', )).to_s);; _hamlout.b...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ',', expecting ')'
+...eck-input"}, nil,:type :'file', )).to_s);; _hamlout.buffer <...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+...lout.attributes({}, nil,:type :"submit")).to_s);; _hamlout.b...
+...                               ^):
+  
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ',', expecting ')'
+app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+app/views/messages/index.html.haml:2:in `_app_views_messages_index_html_haml___3664502039449172545_70352204402960'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (149.8ms)
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:20:43 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (14.2ms)
+  Rendered messages/index.html.haml within layouts/application (21.4ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+...lout.attributes({}, nil,:name :text)).to_s);; _hamlout.buffe...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+...tes({}, nil,:name :text)).to_s);; _hamlout.buffer << ("></te...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+...form-check-input"}, nil,:type :file, )).to_s);; _hamlout.buf...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+...lout.attributes({}, nil,:type :submit)).to_s);; _hamlout.buf...
+...                               ^):
+  
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+app/views/messages/index.html.haml:2:in `_app_views_messages_index_html_haml___3664502039449172545_70352187365600'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (169.4ms)
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:21:54 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (8.2ms)
+  Rendered messages/index.html.haml within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+...mlout.attributes({}, nil,:name: text)).to_s);; _hamlout.buff...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+...tes({}, nil,:name: text)).to_s);; _hamlout.buffer << ("></te...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+..."form-check-input"}, nil,:type: file, )).to_s);; _hamlout.bu...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+...mlout.attributes({}, nil,:type: submit)).to_s);; _hamlout.bu...
+...                               ^):
+  
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+app/views/messages/index.html.haml:2:in `_app_views_messages_index_html_haml___3664502039449172545_70352208085960'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (147.0ms)
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:23:03 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (10.0ms)
+  Rendered messages/index.html.haml within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+...mlout.attributes({}, nil,:name: "text")).to_s);; _hamlout.bu...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+...s({}, nil,:name: "text")).to_s);; _hamlout.buffer << ("></te...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+..."form-check-input"}, nil,:type: 'file', )).to_s);; _hamlout....
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:40: syntax error, unexpected ',', expecting ')'
+...eck-input"}, nil,:type: 'file', )).to_s);; _hamlout.buffer <...
+...                               ^
+/Users/takaiakira/projects/chat-space/app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+...mlout.attributes({}, nil,:type: "submit")).to_s);; _hamlout....
+...                               ^):
+  
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:38: syntax error, unexpected ')', expecting keyword_end
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ':', expecting ')'
+app/views/messages/_messages.html.haml:40: syntax error, unexpected ',', expecting ')'
+app/views/messages/_messages.html.haml:42: syntax error, unexpected ':', expecting ')'
+app/views/messages/index.html.haml:2:in `_app_views_messages_index_html_haml___3664502039449172545_70352202474860'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (158.5ms)
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:24:37 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (10.1ms)
+  Rendered messages/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 50ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-26 17:25:07 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_messages.html.haml (9.8ms)
+  Rendered messages/index.html.haml within layouts/application (15.7ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
