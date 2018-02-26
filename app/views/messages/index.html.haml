@@ -1,4 +1,4 @@
-.header
+.header チャットグループが作成されました
 .main.clear
   .main__sidebar
     .main__sidebar__top
@@ -40,9 +40,14 @@
         %br
         %li.body また明日
     .main__chat__submit
-      = form_tag()do
-        %textarea{:cols => "100", :name => "text",:rows => "3",:size =>"900"}
-        %input{:type => "submit", :value => "SENT"}
+      =form_tag()do
+        %textarea{:name => "text"}
+        %label.form-check-label
+          %input.form-check-input{:type => 'file', }
+          %span.label-name
+
+
+        %button{:type => "submit"}sent
 
 
 

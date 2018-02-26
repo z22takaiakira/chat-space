@@ -21,6 +21,8 @@ height: 100%;
   height: 50px;
   width: 100%;
   background-color: $h-color;
+  text-align: center;
+  color: $bar-tcolor;
 }
 
 
@@ -117,7 +119,7 @@ height: 100%;
       height: 86px;
       width: 100%;
       background-color: white;
-      padding: 0 40px 0 40px;
+      padding-left: 40px;
 
 
       &__group p{
@@ -135,20 +137,20 @@ height: 100%;
          padding: 0 20px;
          line-height:40px;
          text-decoration: none;
-         color: #67c5ff;
+         color: $h-color;
          border: solid 2px #67c5ff;
          border-radius: 3px;
          transition: .4s;
          position: absolute;
          top:28px;
-         right:120px;
+         right:40px;
                     }
                   }
                 }
 
     &__sub{
       height: 50px;
-      padding:0 40px 0 40px;
+      padding:0 0 0 40px;
       position: relative;
       ul{
         padding:46px 0 0 0;
@@ -187,19 +189,53 @@ height: 100%;
                     }
     &__submit{
         height: 90px;
-        background-color: blue;
+        width: 100%;
+        background-color: $chat-border-color;
         position: absolute;
         bottom: 0;
+
+
+
         textarea{
           resize: none;
           height: 50px;
-          width: 700px;
+          width: calc(100% - 200px);
+          margin: 20px 20px 20px 50px;
+                }
+        input.form-check-input{
+                            display: none;
+
+            & + .label-name::before {
+                 display: inline-block;
+                 font-family: FontAwesome;
+                 width: 1.2rem;
+                 position: absolute;
+                 bottom: 30px;
+                 right: 155px;
+                                    }
+            & + .label-name::before {
+                        content: "\f03e";
+                      }
+                    }
+
+        button{
+          height: 50px;
+          padding:10px 30px;
+          position: absolute;
+          bottom: 20px;
+          right: 40px;
+          background-color:$h-color;
+          color: $bar-tcolor;
+          font-size:16px;
+        }
+
+
 
         }
       }
 
            }
-        }
+
 
 
 
