@@ -166,18 +166,15 @@ height: 100%;
         input.form-check-input{
           display: none;
 
-            & + .label-name::before {
+          & + .label-name::before {
               display: inline-block;
               font-family: FontAwesome;
               width: 1.2rem;
               position: absolute;
               bottom: 30px;
               right: 155px;
-                                    }
-
-            & + .label-name::before {
               content: "\f03e";
-                                    }
+                                  }
                               }
 
         button{
