@@ -9014,3 +9014,72 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 414ms (Views: 408.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:23:13 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.0ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:26:02 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 397ms (Views: 394.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:26:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 453ms (Views: 450.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:28:16 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "           }": expected "}", was ""):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    5:     %title ChatSpace
+    6:     = csrf_meta_tags
+    7:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    8:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    9:   %body
+   10:     = yield
+  
+app/assets/stylesheets/application.scss:229
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__302614786327412927_70352203026840'
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/takaiakira/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (150.0ms)
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:28:48 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 424ms (Views: 420.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:30:55 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 442ms (Views: 439.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/chatspace" for 127.0.0.1 at 2018-02-26 13:32:12 +0900
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 397ms (Views: 394.7ms | ActiveRecord: 0.0ms)
+
+
