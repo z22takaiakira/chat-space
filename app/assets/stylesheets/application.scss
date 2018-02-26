@@ -1,21 +1,13 @@
 @import "./reset";
 @import "./variable";
 @import "./font-awesome";
-$h-color: #38AEF0;
-$topbar-color: #253141;
-$bar-tcolor: #ffffff;
-$bar-color: #2f3e51;
-$chat-tcolor: #333333;
-$chat-t2color:#999999;
-$chat-t3color:#434A54;
-$chat-color:#eeeeee;
-$chat-submit-color:#AAAAAA;
+
 
 
 html,
 body{
 height: 100%;
-}
+    }
 
 .header{
   height: 50px;
@@ -23,9 +15,7 @@ height: 100%;
   background-color: $h-color;
   text-align: center;
   color: $bar-tcolor;
-}
-
-
+       }
 
 .main{
   height: 100%;
@@ -42,8 +32,8 @@ height: 100%;
         height: 86px;
         background-color: $topbar-color;
         position: relative;
-        padding: 0 20px 0 20px;}
-
+        padding: 0 20px 0 20px;
+            }
 
       &__top p{
         color: $bar-tcolor;
@@ -59,16 +49,16 @@ height: 100%;
         right: 20px;
         font-family:FontAwesome;
                      }
+
       &__top i#touroku{
         color: $bar-tcolor;
         position:absolute;
         bottom: 35px;
         right: 40px;
         font-family:FontAwesome;
-                     }
+                      }
       &__group{
         padding: 0 20px 0 20px;
-
 
         ul{
         padding: 20px 0 20px 0;
@@ -76,20 +66,17 @@ height: 100%;
         li.name{
           font-size: 15px;
           color:$bar-tcolor;
-
                }
+
         li.text{
           font-size: 11px;
           color:$bar-tcolor;
           margin-top: 5px;
+               }
+           }
+              }
+             }
 
-        }
-
-
-        }
-
-        }
-      }
   &__chat{
     height:100%;
     width: calc(100% - 300px);
@@ -97,25 +84,22 @@ height: 100%;
     position: relative;
     background-color: $chat-color;
 
-
-
-
     &__home{
       height: 86px;
       width: 100%;
       padding-left: 40px;
       background-color: $bar-tcolor;
 
-
-
       &__group p{
         padding-top: 35px;
         font-size: 20px;
                 }
+
       &__name p{
         font-size:12px;
         padding-top: 15px;
-                }
+               }
+
       &__edit{
         a.square_btn{
          display: inline-block;
@@ -131,18 +115,16 @@ height: 100%;
          top:28px;
          right:40px;
                     }
-                  }
-                }
+             }
+           }
 
     &__sub{
       height: 50px;
       padding:0 0 0 40px;
       position: relative;
 
-
       ul{
         padding:46px 0 0 0;
-
 
         li.name{
           float: left;
@@ -150,6 +132,7 @@ height: 100%;
           color:$chat-t3color;
           font-weight: bold;
                }
+
         li.date{
           padding-left: 10px;
           padding-top: 3px;
@@ -158,33 +141,20 @@ height: 100%;
           color:$chat-t2color;
                }
 
-
         li.body{
           padding-top: 10px;
           font-size: 14px;
           color:$chat-t3color;
                }
-
         }
+          }
 
-
-
-
-
-
-
-
-
-                    }
     &__submit{
-        height: 90px;
-        width: 100%;
-        background-color: $chat-submit-color;
-        position: absolute;
-        bottom: 0;
-
-
-
+      height: 90px;
+      width: 100%;
+      background-color: $chat-submit-color;
+      position: absolute;
+      bottom: 0;
 
         textarea{
           resize: none;
@@ -192,21 +162,23 @@ height: 100%;
           width: calc(100% - 200px);
           margin: 20px 20px 20px 50px;
                 }
+
         input.form-check-input{
-                            display: none;
+          display: none;
 
             & + .label-name::before {
-                 display: inline-block;
-                 font-family: FontAwesome;
-                 width: 1.2rem;
-                 position: absolute;
-                 bottom: 30px;
-                 right: 155px;
+              display: inline-block;
+              font-family: FontAwesome;
+              width: 1.2rem;
+              position: absolute;
+              bottom: 30px;
+              right: 155px;
                                     }
+
             & + .label-name::before {
-                        content: "\f03e";
-                      }
-                    }
+              content: "\f03e";
+                                    }
+                              }
 
         button{
           height: 50px;
@@ -217,14 +189,10 @@ height: 100%;
           background-color:$h-color;
           color: $bar-tcolor;
           font-size:16px;
-        }
-
-
-
-        }
+              }
+             }
+          }
       }
-
-           }
 
 
 
