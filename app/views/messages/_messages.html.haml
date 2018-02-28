@@ -4,21 +4,21 @@
       %P
         =current_user.name
 
-      = link_to do
+      = link_to new_group_path do
         %i#settei.fas.fa-edit
 
       = link_to edit_user_path(current_user) do
         %i#touroku.fas.fa-cog
 
-
-
     .main__sidebar__group
       %ul
-        %li.name samplegname1
-        %li.text sampleword1
-      %ul
-        %li.name samplegname2
-        %li.text sampleword2
+        - current_user.groups.each do |group|
+          = link_to group_messages_path(group) do
+            %li.name
+              = group.name
+            %li.text
+              メッセージはまだありません
+
 
   .main__chat
     .main__chat__home
