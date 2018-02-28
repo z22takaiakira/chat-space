@@ -1,6 +1,9 @@
 @import "./reset";
 @import "./variable";
 @import "./font-awesome";
+@import "modules/user";
+@import "config/colors";
+@import "modules/flash";
 
 html,
 body{
@@ -172,6 +175,7 @@ height: 100%;
           bottom: 30px;
           right: 155px;
           content: "\f03e";
+
         }
       }
 
