@@ -1,0 +1,19 @@
+.main__sidebar
+  .main__sidebar__top
+    %P
+      =current_user.name
+
+    = link_to new_group_path do
+      %i#settei.fas.fa-edit
+
+    = link_to edit_user_path(current_user) do
+      %i#touroku.fas.fa-cog
+
+  .main__sidebar__group
+    %ul
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          %li.name
+            = group.name
+          %li.text
+            メッセージはまだありません
