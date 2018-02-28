@@ -61,3 +61,9 @@ group :development do
   gem 'better_errors'
 end
 
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
+end
+
