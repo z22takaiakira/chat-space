@@ -151,7 +151,7 @@ height: 100%;
       }
     }
 
-    &__submit{
+    &__form{
       height: 90px;
       width: 100%;
       background-color: $chat-submit-color;
@@ -164,28 +164,22 @@ height: 100%;
         width: calc(100% - 200px);
         margin: 20px 20px 20px 50px;
       }
-
-      input.form-check-input{
-        display: none;
-
-        & + .label-name::before {
-          display: inline-block;
-          font-family: FontAwesome;
-          width: 1.2rem;
-          position: absolute;
-          bottom: 30px;
-          right: 155px;
-          content: "\f03e";
-
+      &__mask{
+        position: absolute;
+        bottom: 30px;
+        right: 150px;
+        &__image{
+        }
+        .hidden{
+          display: none;
         }
       }
-
-      button{
+      &__submit{
         height: 50px;
         padding:10px 30px;
         position: absolute;
         bottom: 20px;
-        right: 40px;
+        right: 30px;
         background-color:$h-color;
         color: $bar-tcolor;
         font-size:16px;
