@@ -151,7 +151,7 @@ height: 100%;
       }
     }
 
-    &__submit{
+    &__form{
       height: 90px;
       width: 100%;
       background-color: $chat-submit-color;
@@ -164,6 +164,7 @@ height: 100%;
         width: calc(100% - 200px);
         margin: 20px 20px 20px 50px;
       }
+
 
       input.form-check-input{
         display: none;

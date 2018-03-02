@@ -41,10 +41,11 @@
         %li.date 2018/2/25
         %br
         %li.body また明日
-    .main__chat__submit
-      =form_tag()do
-        %textarea{name: "text"}
-        %label.form-check-label
-          %input.form-check-input{type: 'file', }
-          %span.label-name
-        %button{type: "submit"}sent
+    .main__chat__form
+      = form_for [@group, @message] do |f|
+        = f.text_area :content
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
