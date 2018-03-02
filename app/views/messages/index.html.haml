@@ -1,1 +1,45 @@
-= render partial: "messages"
+.main
+  .main__sidebar
+    .main__sidebar__top
+      %P
+        =current_user.name
+
+      = link_to new_group_path do
+        %i#settei.fas.fa-edit
+
+      = link_to edit_user_path(current_user) do
+        %i#touroku.fas.fa-cog
+
+    .main__sidebar__group
+      %ul
+        - current_user.groups.each do |group|
+          = link_to group_messages_path(group) do
+            %li.name
+              = group.name
+            %li.text
+              = group.show_last_message
+
+
+  .main__chat
+    .main__chat__home
+      .main__chat__home__group
+        %p takai.akira
+      .mein__chat__home__name
+        %p menber : takai
+      .main__chat__home__edit
+        =link_to "EDIT"
+
+
+    .main__chat__sub
+      = render @messages
+
+    .main__chat__form
+      = form_for [@group, @message] do |f|
+        = f.text_area :content
+        .main__chat__form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'main__chat__form__submit'
+
+
