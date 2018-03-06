@@ -19,6 +19,7 @@ class MessagesController < ApplicationController
       render :index
     end}
       format.json
+    end
   end
 
   private
