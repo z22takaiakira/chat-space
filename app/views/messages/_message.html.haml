@@ -1,11 +1,12 @@
-%ul
-  %li.name
-    = message.user.name
-  %li.date
-    = message.created_at.strftime('%Y/%m/%d')
+.main__chat__sub__message
+  .main__chat__sub__message__upper-message
+    .main__chat__sub__message__upper-message__user-name
+      = message.user.name
+    .main__chat__sub__message__upper-message__date
+      = message.created_at.strftime('%Y/%m/%d')
   %br
-  %li.body
+  .main__chat__sub__message__lower-meesage
     - if message.content.present?
-      %p.lower-message__content
+      %p#lower-content
         = message.content
     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?

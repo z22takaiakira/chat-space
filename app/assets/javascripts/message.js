@@ -26,11 +26,11 @@ $(function(){
       processData: false
     })
     .done(function(data){
-      console.log($('li.body:last'))
+      console.log($('li.messages:last'))
       var html = buildHTML(data);
       $('messages').append(html)
       $('.textbox').val('')
-      $("html,body").animate({scrollTop:$('li.body:last').offset().top});
+      $("html,body").animate({scrollTop:$('li.messages:last').offset().top});
     })
   })
 })
