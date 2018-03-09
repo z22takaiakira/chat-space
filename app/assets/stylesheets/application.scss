@@ -166,23 +166,26 @@ height: 100%;
       background-color: $chat-submit-color;
       position: relative;
 
-
       textarea{
         resize: none;
         height: 50px;
         width: calc(100% - 200px);
         margin: 20px 20px 20px 50px;
       }
+
       &__mask{
         position: absolute;
         bottom: 30px;
         right: 150px;
+
         &__image{
         }
+
         .hidden{
           display: none;
         }
       }
+
       &__submit{
         height: 50px;
         padding:10px 30px;

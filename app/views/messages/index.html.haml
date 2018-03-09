@@ -19,7 +19,6 @@
             %li.text
               = group.show_last_message
 
-
   .main__chat
     .main__chat__home
       .main__chat__home__group
@@ -28,7 +27,6 @@
         %p menber : takai
       .main__chat__home__edit
         =link_to "EDIT"
-
 
     .main__chat__sub
       = render @messages
@@ -41,5 +39,3 @@
             = fa_icon 'picture-o', class: 'icon'
             = f.file_field :image, class: 'hidden'
         = f.submit 'Send', class: 'main__chat__form__submit'
-
-

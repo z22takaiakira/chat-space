@@ -7,7 +7,6 @@ $(function(){
     else{
     var chatImage = ''
     }
-    console.log(chatImage);
     var html = `<div class="main__chat__sub__message">
                   <div class="main__chat__sub__message__upper-message">
                     <div class="main__chat__sub__message__upper-message__user-name">
@@ -41,7 +40,6 @@ $(function(){
     })
 
     .done(function(data){
-
       var html = buildHTML(data);
       $('.main__chat__sub').append(html)
       $('#message_content').val('')
