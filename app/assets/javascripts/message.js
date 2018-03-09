@@ -1,12 +1,6 @@
 $(function(){
   function buildHTML(message){
-
-    if(message.image){
-    var chatImage = message.image
-    }
-    else{
-    var chatImage = ''
-    }
+    var chatImage = (message.image) ? message.image : '';
     var html = `<div class="main__chat__sub__message">
                   <div class="main__chat__sub__message__upper-message">
                     <div class="main__chat__sub__message__upper-message__user-name">
@@ -18,7 +12,7 @@ $(function(){
                   </div>
                   <br>
                   <div class="main__chat__sub__message__lower-message">
-                    <p id="lower-content">
+                    <p class="lower-content">
                       ${message.content}
                     </p>
                     <img class=$('lower-message__image') src=${chatImage}>
@@ -26,6 +20,7 @@ $(function(){
                 </div>`
     return html;
   }
+
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -45,6 +40,9 @@ $(function(){
       $('#message_content').val('')
       $('.main__chat__form__submit').prop("disabled", false);
       $("html,body").animate({scrollTop:$('.main__chat__sub__message').last().offset().top});
+    })
+    .fail(function(){
+      alert('error');
     })
   })
 })

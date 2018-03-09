@@ -7,6 +7,6 @@
   %br
   .main__chat__sub__message__lower-message
     - if message.content.present?
-      %p#lower-content
+      %p.lower-content
         = message.content
     = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
