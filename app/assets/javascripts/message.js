@@ -1,4 +1,5 @@
 $(function(){
+
   function buildHTML(message){
     var chatImage = (message.image) ? message.image : '';
     var html = `<div class="main__chat__sub__message">

@@ -31,7 +31,7 @@
     .main__chat__sub
       = render @messages
 
-    .main__chat__form
+    .main__chat__form#footer
       = form_for [@group, @message] do |f|
         = f.text_area :content
         .main__chat__form__mask
