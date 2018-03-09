@@ -1,17 +1,30 @@
 $(function(){
   function buildHTML(message){
-    var html = `.main__chat__sub__message
-                  .main__chat__sub__message__upper-message
-                    .main__chat__sub__message__upper-message__user-name
-                      = message.user.name
-                    .main__chat__sub__message__upper-message__date
-                      = message.created_at.strftime('%Y/%m/%d')
-                  %br
-                  .main__chat__sub__message__lower-meesage
-                    - if message.content.present?
-                      %p#lower-content
-                        = message.content
-                    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?`
+
+    if(message.image){
+    var chatImage = message.image
+    }
+    else{
+    var chatImage = ''
+    }
+    console.log(chatImage);
+    var html = `<div class="main__chat__sub__message">
+                  <div class="main__chat__sub__message__upper-message">
+                    <div class="main__chat__sub__message__upper-message__user-name">
+                      ${message.user_name}
+                    </div>
+                    <div class="main__chat__sub__message__upper-message__date">
+                      ${message.date}
+                    </div>
+                  </div>
+                  <br>
+                  <div class="main__chat__sub__message__lower-message">
+                    <p id="lower-content">
+                      ${message.content}
+                    </p>
+                    <img class=$('lower-message__image') src=${chatImage}>
+                  </div>
+                </div>`
     return html;
   }
   $('#new_message').on('submit', function(e){
@@ -26,12 +39,14 @@ $(function(){
       contentType: false,
       processData: false
     })
+
     .done(function(data){
-      console.log($('li.messages:last'))
+
       var html = buildHTML(data);
-      $('messages').append(html)
-      $('.textbox').val('')
-      $("html,body").animate({scrollTop:$('li.messages:last').offset().top});
+      $('.main__chat__sub').append(html)
+      $('#message_content').val('')
+      $('.main__chat__form__submit').prop("disabled", false);
+
     })
   })
 })

@@ -5,7 +5,7 @@
     .main__chat__sub__message__upper-message__date
       = message.created_at.strftime('%Y/%m/%d')
   %br
-  .main__chat__sub__message__lower-meesage
+  .main__chat__sub__message__lower-message
     - if message.content.present?
       %p#lower-content
         = message.content
