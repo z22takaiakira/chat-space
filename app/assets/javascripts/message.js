@@ -34,13 +34,12 @@ $(function(){
       contentType: false,
       processData: false
     })
-
     .done(function(data){
       var html = buildHTML(data);
       $('.main__chat__sub').append(html)
       $('#new_message')[0].reset()
-      $('.main__chat__form__submit').prop("disabled", false);
-      $("html,body").animate({scrollTop:$('.main__chat__sub__message').last().offset().top});
+      $('.main__chat__form__submit').prop("disabled", false)
+      $('.main__chat__sub').animate({scrollTop:$('.main__chat__sub__message').last().offset().top});
     })
     .fail(function(){
       alert('error');
