@@ -46,7 +46,7 @@ $(function(){
       $('.main__chat__sub').append(html)
       $('#message_content').val('')
       $('.main__chat__form__submit').prop("disabled", false);
-
+      $("html,body").animate({scrollTop:$('.main__chat__sub__message').last().offset().top});
     })
   })
 })
