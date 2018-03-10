@@ -19,7 +19,6 @@
             %li.text
               = group.show_last_message
 
-
   .main__chat
     .main__chat__home
       .main__chat__home__group
@@ -29,11 +28,10 @@
       .main__chat__home__edit
         =link_to "EDIT"
 
-
     .main__chat__sub
       = render @messages
 
-    .main__chat__form
+    .main__chat__form#footer
       = form_for [@group, @message] do |f|
         = f.text_area :content
         .main__chat__form__mask
@@ -41,5 +39,3 @@
             = fa_icon 'picture-o', class: 'icon'
             = f.file_field :image, class: 'hidden'
         = f.submit 'Send', class: 'main__chat__form__submit'
-
-
