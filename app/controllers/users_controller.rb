@@ -6,8 +6,6 @@ class UsersController < ApplicationController
       format.html
       format.json { render json: @users }
     end
-    end
-
   end
 
   def update
