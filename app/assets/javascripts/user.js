@@ -20,7 +20,6 @@ $(function(){
   $('#user-search-field').on('keyup', function(e){
     var input = $('#user-search-field').val();
     $('#user-search-result').empty();
-      console.log(input !=="")
       if(input !==""){
         $.ajax({
           type: 'GET',
@@ -38,13 +37,12 @@ $(function(){
          appendNoUser('一致るするユーザーはありません');
        }
     })
-// ユーザーの検索に失敗
     .fail(function() {
       alert('ユーザーの検索に失敗しました');
     })
-     }
+      }
    });
-// 追加ユーザーリスト作成
+
   function addUser(user_id, user_name) {
     var html = `<div class='chat-group-user clearfix' id='chat-group-user-8>
                   <input name='group[user_ids][]' type='hidden' value='${user_id}'>
@@ -54,14 +52,13 @@ $(function(){
     $('#chat-group-users').append(html);
   }
 
-// 追加ボタンクリック時の処理
   $('#user-search-result').on('click','.chat-group-user__btn--add',function(){
     var user_id = $(this).data('user-id');
     var user_name = $(this).data('user-name');
     addUser(user_id, user_name);
       $(this).parent().remove();
   });
-// 削除ボタンクリック時の処理
+
   $('#chat-group-users').on('click','.chat-group-user__btn--remove',function(){
     $(this).parent().remove();
   });
